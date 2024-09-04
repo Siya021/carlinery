@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div  class="bg-video blur filter grayscale">
+    <video class="bg-video__content w-full h-1/2 object-cover" autoplay muted loop>
+    <source src="/assets/3492773335-preview.mp4" type="video/mp4">
+  </video>
+  </div>
+  
+    <div class="container mx-auto p-4 absolute top-28 items-center left-0 right-0">
+        <h1 class="text-3xl font-bold text-center">Student Management System</h1>
+        <div class="flex justify-center mt-8">
+            <button id="student-btn" class="bg-blue-500 text-white px-4 py-2 rounded">Student Dashboard</button>
+            <button id="teacher-btn" class="bg-green-500 text-white px-4 py-2 rounded ml-4">Teacher Dashboard</button>
+        </div>
+        
+
+        <!-- Student Dashboard -->
+        <div id="student-dashboard" class="hidden mt-8">
+            <h2 class="text-2xl font-bold">Student Dashboard</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <a href="/students/schedule.html" class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold">Class Schedule</h3>
+                    <p>View your class schedule here.</p>
+                </a>
+                <a href="/students/assignments.html" class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold">Assignments</h3>
+                    <p>View and submit assignments.</p>
+                </a>
+                <a href="/students/grades.html" class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold">Grades</h3>
+                    <p>Check your grades and feedback.</p>
+                </a>
+                <a href="/students/resources.html" class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold">Resources</h3>
+                    <p>Access learning materials and resources.</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Teacher Dashboard -->
+<div id="teacher-dashboard" class="hidden mt-8">
+    <h2 class="text-2xl font-bold">Teacher Dashboard</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <a href="/teachers/class-management.html" class="bg-white p-4 rounded shadow">
+        <h3 class="font-bold">Class Management</h3>
+        <p>Manage your classes and schedules.</p>
+      </a>
+      <a href="/teachers/grading.html" class="bg-white p-4 rounded shadow">
+        <h3 class="font-bold">Grading</h3>
+        <p>Grade student assignments and exams.</p>
+      </a>
+      <a href="/teachers/attendace.html" class="bg-white p-4 rounded shadow">
+        <h3 class="font-bold">Attendance</h3>
+        <p>Track student attendance.</p>
+      </a>
+      <a href="/teachers/communication.html" class="bg-white p-4 rounded shadow">
+        <h3 class="font-bold">Communication</h3>
+        <p>Communicate with students and staff.</p>
+      </a>
+    </div>
+  </div>
+    </div>
+
+
+    <footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600 h-40">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline">Contact</a>
+          </li>
+      </ul>
+    </footer>
+    <!-- JavaScript File -->
+    <script src="/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+</html>
